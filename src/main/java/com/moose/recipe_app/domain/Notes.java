@@ -23,7 +23,7 @@ public class Notes {
     @Lob
     private String recipeNotes;
 
-    protected Notes(){}
+    public Notes(){}
 
 
 

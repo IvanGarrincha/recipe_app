@@ -1,0 +1,11 @@
+insert into Category (description) values('American');
+insert into CATEGORY (description) values('Italian');
+insert into CATEGORY (description) values('Mexican');
+insert into CATEGORY (description) values('Fast Food');
+insert into unit_of_measure (description) values('Teaspoon');
+insert into unit_of_measure (description) values('Tablespoon');
+insert into unit_of_measure (description) values('Cup');
+insert into unit_of_measure (description) values('Pint');
+insert into unit_of_measure (description) values('Ounce');
+insert into unit_of_measure (description) values('Dash');
+insert into unit_of_measure (description) values('Each');
