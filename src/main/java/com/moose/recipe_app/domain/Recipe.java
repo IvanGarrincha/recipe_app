@@ -40,6 +40,9 @@ public class Recipe {
     private Notes notes;
 
     @ManyToMany
+    @JoinTable(name = "RECIPE_CATEGORY",
+        joinColumns = @JoinColumn(name = "RECIPE_ID"),
+            inverseJoinColumns = @JoinColumn(name = "CATEGORY"))
     private Set<Category> categories;
 
     public Long getId() {
@@ -127,5 +130,13 @@ public class Recipe {
 
     public void setDifficulty(Difficulty difficulty) {
         this.difficulty = difficulty;
+    }
+
+    public Set<Category> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(Set<Category> categories) {
+        this.categories = categories;
     }
 }
